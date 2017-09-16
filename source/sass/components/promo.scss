@@ -1,0 +1,106 @@
+.promo {
+  background-image: url("../img/promo__bg.png");
+  background-repeat: no-repeat;
+  background-size: 872px 438px;
+  background-position: 770px bottom;
+  @media (-webkit-min-device-pixel-ratio: 2) {
+    background-image: url("../img/promo__bg@2x.png");
+  }
+  &__inner {
+    max-width: 1140px;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+    margin: auto;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    &::after {
+      @include clearfix;
+    }
+  }
+  &__wrap {
+    padding-top: 170px;
+    text-align: right;
+    float: right;
+  }
+  &__title {
+    margin-top: 0;
+    font-size: $font-size-h1;
+    font-family: Dosis, Arial, sans-serif;
+    color: $teal;
+    line-height: 1.2;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  &__subtitle {
+    margin: 0;
+    font-size: $font-size-h1 - 2.4;
+    font-family: Dosis, Arial, sans-serif;
+    color: $teal;
+    line-height: 1.2;
+    font-weight: 500;
+  }
+  &__btn {
+    display: block;
+    float: right;
+    width: 30%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: $teal;
+    border-radius: 10px;
+    font-size: $font-size-base;
+    font-family: Roboto, Arial, sans-serif;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 35px;
+    color: $white;
+  }
+}
+
+.promo-slider {
+  position: relative;
+  float: left;
+  width: 770px;
+  margin-left: -223px;
+  height: auto;
+  min-height: 664px;
+  &__list {
+    list-style: none;
+    margin: 0;
+  }
+  &__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 1.5s;
+    &--show {
+      opacity: 1;
+      z-index: 2;
+    }
+  }
+  &__img {
+    width: 100%;
+  }
+  &__nav {
+    position: absolute;
+    width: 62px;
+    display: flex;
+    justify-content: space-between;
+    left: 47%;
+    bottom: 20px;
+    z-index: 10;
+  }
+  &__nav-item {
+    box-sizing: border-box;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid $teal;
+    cursor: pointer;
+    &--active {
+      background-color: $teal;
+    }
+  }
+}

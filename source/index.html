@@ -15,26 +15,43 @@
       <div class="page-header__wrap">
         <div class="page-header__top">
           <div class="page-header__group">
-            <a href="tel:1-800-633-3469" class="page-header__phone"><svg></svg>1-800-633-3469</a>
-            <a href="mailto:mailedukado.com" class="page-header__mail"><svg></svg>mailedukado.com</a>
+            <a href="tel:1-800-633-3469" class="page-header__phone"><svg width="15" height="13">
+                                    <use xlink:href="#page-header__phone"></use>
+                                </svg>1-800-633-3469</a>
+            <a href="mailto:mailedukado.com" class="page-header__mail"><svg width="17" height="13">
+                                    <use xlink:href="#page-header__mail"></use>
+                                </svg>mailedukado.com</a>
           </div>
-          <div class="page-header__group">
-            <a href="#" class="page-header__search"><svg></svg>Search</a>
-            <a href="#" class="page-header__register"><svg></svg>Register</a>
-            <a href="#" class="page-header__login"><svg></svg>Login</a>
+          <div class="page-header__group page-header__group--narrow">
+            <a href="#" class="page-header__search"><svg width="13" height="13">
+                                    <use xlink:href="#page-header__search"></use>
+                                </svg>Search</a>
+            <a href="#" class="page-header__register"><svg width="12" height="14">
+                                    <use xlink:href="#page-header__register"></use>
+                                </svg>Register</a>
+            <a href="#" class="page-header__login"><svg width="14" height="12">
+                                    <use xlink:href="#page-header__login"></use>
+                                </svg>Login</a>
           </div>
         </div>
-        <nav class="page-header__nav">
-          <ul class="page-header__nav-list">
-            <li class="page-header__nav-item"><a href="#" class="page-header__nav-link page-header__nav-link--active">Home</a></li>
-            <li class="page-header__nav-item"><a href="#" class="page-header__nav-link">Academic</a></li>
-            <li class="page-header__nav-item"><a href="#" class="page-header__nav-link">Admission</a></li>
-            <li class="page-header__nav-item"><a href="#" class="page-header__nav-link">Teachers</a></li>
-            <li class="page-header__nav-item"><a href="#" class="page-header__nav-link">About</a></li>
-            <li class="page-header__nav-item"><a href="#" class="page-header__nav-link">Blog</a></li>
-            <li class="page-header__nav-item"><a href="#" class="page-header__nav-link">Contact</a></li>
-          </ul>
-        </nav>
+        <div class="page-header__bottom">
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a href="#" class="main-nav__link main-nav__link--active">Home</a></li>
+              <li class="main-nav__item"><a href="#" class="main-nav__link">Academic</a></li>
+              <li class="main-nav__item"><a href="#" class="main-nav__link">Admission</a></li>
+              <li class="main-nav__item"><a href="#" class="main-nav__link">Teachers</a></li>
+              <li class="main-nav__item"><a href="#" class="main-nav__link">About</a></li>
+              <li class="main-nav__item"><a href="#" class="main-nav__link">Blog</a></li>
+              <li class="main-nav__item"><a href="#" class="main-nav__link">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="hamburger">
+            <div class="hamburger__line hamburger__line--half hamburger__line--start"></div>
+            <div class="hamburger__line"></div>
+            <div class="hamburger__line hamburger__line--half hamburger__line--end"></div>
+          </div>
+        </div>
       </div>
     </div>
   </header>
@@ -42,18 +59,18 @@
     <div class="promo__inner">
       <div class="promo-slider">
         <ul class="promo-slider__list">
-          <li class="promo-slider__item"><img src="img/promo__slide--1.png" srcset="img/promo__slide--1@2x.png 2x" alt="Your Neighborhood Preschool" class="promo-slider__img"></li>
+          <li class="promo-slider__item promo-slider__item--show"><img src="img/promo__slide--1.png" srcset="img/promo__slide--1@2x.png 2x" alt="Your Neighborhood Preschool" class="promo-slider__img"></li>
           <li class="promo-slider__item"><img src="img/promo__slide--2.png" srcset="img/promo__slide--2@2x.png 2x" alt="Your Neighborhood Preschool" class="promo-slider__img"></li>
           <li class="promo-slider__item"><img src="img/promo__slide--3.png" srcset="img/promo__slide--3@2x.png 2x" alt="Your Neighborhood Preschool" class="promo-slider__img"></li>
         </ul>
         <div class="promo-slider__nav">
+          <i class="promo-slider__nav-item promo-slider__nav-item--active" id="promo-slider__nav-item--active"></i>
           <i class="promo-slider__nav-item"></i>
-          <i class="promo-slider__nav-item promo-slider__nav-item--active"></i>
           <i class="promo-slider__nav-item"></i>
         </div>
       </div>
       <div class="promo__wrap">
-        <h1 class="promo__title">Play. Learn. Grow</h1>
+        <h1 class="promo__title">Play. Learn. Grow.</h1>
         <h2 class="promo__subtitle">Your Neighborhood Preschool</h2>
         <a href="#" class="promo__btn">Admission now</a>
       </div>
