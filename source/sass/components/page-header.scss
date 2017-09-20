@@ -46,7 +46,8 @@
     width: 41%;
     margin-bottom: 20px;
     @media(min-width: $min-width-1) and (max-width: $max-width-1) {
-      width: 80%;
+      width: 100%;
+      justify-content: flex-end;
     }
     @media(max-width: $min-width-1) {
       width: 25%;
@@ -54,7 +55,7 @@
     &--narrow {
       width: 30%;
       @media(min-width: $min-width-1) and (max-width: $max-width-1) {
-        width: 80%;
+        width: 100%;
       }
       @media(max-width: $min-width-1) {
         width: 45%;
@@ -66,6 +67,9 @@
     font-size: $font-size-base;
     font-family: $font-family-base;
     opacity: .9;
+    @media(min-width: $min-width-1) and (max-width: $max-width-1) {
+      margin-right: 10%;
+    }
     @media(max-width: $min-width-1) {
       font-size: 0;
     }
@@ -91,12 +95,18 @@
   &__search {
     font-size: 0;
     opacity: .9;
+    @media(min-width: $min-width-1) and (max-width: $max-width-1) {
+      margin-right: 16%;
+    }
     svg {
       fill: $white;
     }
   }
   &__register {
     opacity: .9;
+    @media(min-width: $min-width-1) and (max-width: $max-width-1) {
+      margin-right: 10%;
+    }
     @media(max-width: $min-width-1) {
       font-size: 0;
     }
