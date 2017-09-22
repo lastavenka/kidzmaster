@@ -1,0 +1,105 @@
+.features {
+  background-image: url("../img/features__bg.png");
+  background-size: cover;
+  background-color: $teal;
+  @media (-webkit-min-device-pixel-ratio: 2) {
+    background-image: url("../img/features__bg@2x.png");
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1140px;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+    margin: auto;
+    padding-top: 55px;
+    padding-bottom: 50px;
+    @media(max-width: $max-width-1) {
+      flex-direction: column;
+    }
+  }
+  &__wrap {
+    width: 40%;
+    @media(min-width: $min-width-1) and (max-width: $min-width-2) {
+      width: 60%;
+      margin: auto;
+    }
+    @media(max-width: $min-width-1) {
+      width: 80%;
+      margin: auto;
+      text-align: center;
+    }
+  }
+  &__img {
+    width: 85%;
+    @media(max-width: $min-width-2) {
+      display: block;
+      width: 65%;
+      margin: auto;
+    }
+  }
+  &__title {
+    font-size: $font-size-h1 / 2;
+    font-family: Dosis, Arial, sans-serif;
+    color: $white;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 0;
+    @media(min-width: $min-width-1) and (max-width: $min-width-2) {
+      text-align: center;
+    }
+  }
+  &__text {
+    margin-top: 25px;
+    margin-bottom: 0;
+    font-size: $font-size-base;
+    font-family: Roboto, Arial, sans-serif;
+    color: $white;
+    line-height: 1.7;
+    font-weight: normal;
+  }
+  &__list {
+    @include list-to-flex;
+    flex-wrap: wrap;
+    width: 49%;
+    margin-top: 80px;
+    @media(min-width: $min-width-1) and (max-width: $min-width-2) {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: space-around;
+    }
+    @media(max-width: $min-width-1) {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: space-around;
+    }
+  }
+}
+
+.feature {
+  box-sizing: border-box;
+  padding-top: 43px;
+  margin-bottom: 35px;
+  text-align: center;
+  background-color: $white;
+  border-radius: 20px;
+  width: 163px;
+  height: 160px;
+  font-size: $font-size-base;
+  font-family: Roboto, Arial, sans-serif;
+  color: $teal;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-right: 1%;
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 9px;
+  }
+}
