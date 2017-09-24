@@ -1019,4 +1019,104 @@ a {
     margin-right: auto;
     margin-bottom: 9px; }
 
+.teachers__inner {
+  max-width: 1140px;
+  padding-right: 1.5%;
+  padding-left: 1.5%;
+  margin: auto;
+  padding-top: 52px;
+  padding-bottom: 44px; }
+.teachers__wrap {
+  width: 49%; }
+  @media (max-width: 1170px) {
+    .teachers__wrap {
+      width: 70%;
+      margin: auto;
+      text-align: center; } }
+.teachers__title {
+  font-size: 3.6rem;
+  font-family: Dosis, Arial, sans-serif;
+  color: #00a4d3;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0;
+  letter-spacing: 1px; }
+.teachers__text {
+  margin-top: 20px;
+  font-size: 1.4rem;
+  font-family: Roboto, Arial, sans-serif;
+  color: #333;
+  line-height: 1.7;
+  font-weight: 500;
+  margin-bottom: 0; }
+.teachers__container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 65px; }
+  @media (max-width: 1170px) {
+    .teachers__container {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 40px; } }
+.teachers__list {
+  width: 49%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  @media (max-width: 1170px) {
+    .teachers__list {
+      width: 60%; } }
+
+.teacher {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 260px;
+  margin-bottom: 36px; }
+  @media (max-width: 1170px) {
+    .teacher {
+      margin-bottom: 20px; } }
+  .teacher--right-top-corner {
+    border-top-right-radius: 0; }
+  .teacher--right-bottom-corner {
+    border-bottom-right-radius: 0; }
+  .teacher--left-top-corner {
+    border-top-left-radius: 0; }
+  .teacher--left-bottom-corner {
+    border-bottom-left-radius: 0; }
+  .teacher__img {
+    width: 100%; }
+  .teacher__wrap {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    background-color: #00a4d3;
+    width: 100%;
+    text-align: center;
+    padding-top: 13px;
+    padding-bottom: 13px; }
+  .teacher__name {
+    display: inline-block;
+    margin-right: 2%;
+    color: #fff;
+    font-size: 2.4rem;
+    font-family: Dosis, Arial, sans-serif;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+    letter-spacing: 1px; }
+  .teacher__position {
+    color: #fff;
+    font-size: 1.4rem;
+    font-family: Dosis, Arial, sans-serif;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: 1px; }
+
 /*# sourceMappingURL=style.css.map */
