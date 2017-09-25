@@ -1119,4 +1119,94 @@ a {
     font-weight: 500;
     letter-spacing: 1px; }
 
+.testimonials {
+  background-image: url("../img/testimonials__bg.png");
+  background-size: cover;
+  background-color: #00a4d3; }
+  @media (-webkit-min-device-pixel-ratio: 2) {
+    .testimonials {
+      background-image: url("../img/testimonials__bg@2x.png"); } }
+  .testimonials__inner {
+    max-width: 1140px;
+    padding-right: 9%;
+    padding-left: 9%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px; }
+  .testimonials__title {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0; }
+  .testimonials__list {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    min-height: 622px; }
+  .testimonials__nav {
+    width: 62px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
+    cursor: pointer; }
+    @media (min-width: 700px) and (max-width: 1170px) {
+      .testimonials__nav {
+        margin-top: 20px; } }
+  .testimonials__nav-item {
+    box-sizing: border-box;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    cursor: pointer;
+    z-index: 10; }
+    .testimonials__nav-item--active {
+      background-color: #fff; }
+
+.testimonial {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0; }
+  .testimonial--show {
+    opacity: 1; }
+  .testimonial__img {
+    display: block;
+    margin: auto;
+    width: 44%; }
+    @media (min-width: 700px) and (max-width: 1170px) {
+      .testimonial__img {
+        width: 50%; } }
+    @media (max-width: 700px) {
+      .testimonial__img {
+        width: 80%; } }
+  .testimonial__name {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 35px;
+    font-size: 3.6rem;
+    font-family: Dosis, Arial, sans-serif;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: 700;
+    text-align: center;
+    font-style: normal;
+    letter-spacing: 2px; }
+  .testimonial__text {
+    font-size: 1.8rem;
+    font-family: Roboto, Arial, sans-serif;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #fff;
+    font-weight: normal; }
+
 /*# sourceMappingURL=style.css.map */
