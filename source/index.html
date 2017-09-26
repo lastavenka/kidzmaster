@@ -258,28 +258,29 @@
   <section class="news">
     <div class="news__inner">
       <h2 class="news__title">From Notice Board</h2>
-      <nav class="news__nav">
-        <ul class="news__nav-list">
-          <li class="news__nav-item"><a href="#" class="news__nav-link">Latest news</a></li>
-          <li class="news__nav-item"><a href="#" class="news__nav-link">Bulletin</a></li>
-          <li class="news__nav-item"><a href="#" class="news__nav-link">Media</a></li>
-        </ul>
-      </nav>
+      <ul class="news__nav">
+        <li class="news__nav-item"><a href="#" class="news__nav-link news__nav-link--active">Latest news</a></li>
+        <li class="news__nav-item"><a href="#" class="news__nav-link">Bulletin</a></li>
+        <li class="news__nav-item"><a href="#" class="news__nav-link">Media</a></li>
+      </ul>
       <ul class="news__list">
         <li class="news-item">
-          <img src="img/news__2017:02:25.jpg" srcset="img/news__2017:02:25@2x.jpg 2x" alt="A Diploma of Accounting" class="news-item__img">
-          <time class="news-item__time" datetime="2017-02-25">February 25, 2017</time>
-          <p class="news-item__preview">A Diploma of Accounting is specifically designed for those</p>
+          <a href="#" class="news-item__link"><img src="img/news__2017:02:25.jpg" srcset="img/news__2017:02:25@2x.jpg 2x" alt="A Diploma of Accounting" class="news-item__img">
+            <time class="news-item__time" datetime="2017-02-25">February 25, 2017</time>
+            <p class="news-item__preview">A Diploma of Accounting is specifically designed for those</p>
+          </a>
         </li>
         <li class="news-item">
-          <img src="img/news__2017:02:20.jpg" srcset="img/news__2017:02:20@2x.jpg 2x" alt="A Diploma of Accounting" class="news-item__img">
-          <time class="news-item__time" datetime="2017-02-20">February 20, 2017</time>
-          <p class="news-item__preview">A Diploma of Accounting is specifically designed for those</p>
+          <a href="#" class="news-item__link"><img src="img/news__2017:02:20.jpg" srcset="img/news__2017:02:20@2x.jpg 2x" alt="A Diploma of Accounting" class="news-item__img">
+            <time class="news-item__time" datetime="2017-02-20">February 20, 2017</time>
+            <p class="news-item__preview">A Diploma of Accounting is specifically designed for those</p>
+          </a>
         </li>
         <li class="news-item">
-          <img src="img/news__2017:02:19.jpg" srcset="img/news__2017:02:19@2x.jpg 2x" alt="A Diploma of Accounting" class="news-item__img">
-          <time class="news-item__time" datetime="2017-02-19">February 19, 2017</time>
-          <p class="news-item__preview">A Diploma of Accounting is specifically designed for those</p>
+          <a href="#" class="news-item__link"><img src="img/news__2017:02:19.jpg" srcset="img/news__2017:02:19@2x.jpg 2x" alt="A Diploma of Accounting" class="news-item__img">
+            <time class="news-item__time" datetime="2017-02-19">February 19, 2017</time>
+            <p class="news-item__preview">A Diploma of Accounting is specifically designed for those</p>
+          </a>
         </li>
       </ul>
     </div>
@@ -288,24 +289,28 @@
     <div class="contacts__inner">
       <h2 class="contacts__title">Contacts</h2>
       <ul class="contacts__list">
-        <li class="contact">
+        <li class="contact contact--odd">
           <img src="img/contacts__address.png" srcset="img/contacts__address@2x.png 2x" alt="Kidz Master Address" class="contact__img">
           <h4 class="contact__title">Kidz Master Address</h4>
           <address class="contact__text">73724 Route, 4A<br>South Richmond Hill, NY 11419</address>
         </li>
-        <li class="contact">
-          <img src="img/contacts__notice.png" srcset="img/contacts__notice@2x.png 2x" alt="Notice board" class="contact__img">
-          <h4 class="contact__title"><a href="#" class="contact__link">Notice board</a></h4>
+        <li class="contact contact--even">
+          <img src="img/contacts__notice.png" srcset="img/contacts__notice@2x.png 2x" alt="Notice board" class="contact__img contact__img--wide">
+          <h4 class="contact__title"><a href="#" class="contact__link">Notice board <svg width="9" height="11">
+                                    <use xlink:href="#contact__arrow"></use>
+                                </svg></a></h4>
           <p class="contact__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </li>
-        <li class="contact">
+        <li class="contact contact--odd">
           <img src="img/contacts__clock.png" srcset="img/contacts__clock@2x.png 2x" alt="Office Hour" class="contact__img">
           <h4 class="contact__title">Office Hour</h4>
           <p class="contact__text">Monday-Friday<br>9:00am-5:00pm</p>
         </li>
-        <li class="contact">
-          <img src="img/contacts__admission.png" srcset="img/contacts__admission@2x.png 2x" alt="Admission Now" class="contact__img">
-          <h4 class="contact__title"><a href="#" class="contact__link">Admission Now</a></h4>
+        <li class="contact contact--even">
+          <img src="img/contacts__admission.png" srcset="img/contacts__admission@2x.png 2x" alt="Admission Now" class="contact__img contact__img--wide">
+          <h4 class="contact__title"><a href="#" class="contact__link">Admission Now <svg width="9" height="12">
+                                    <use xlink:href="#contact__arrow"></use>
+                                </svg></a></h4>
           <p class="contact__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </li>
       </ul>

@@ -1,4 +1,4 @@
-  .testimonials {
+.testimonials {
   background-image: url("../img/testimonials__bg.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -49,47 +49,49 @@
       }
     }
   }
-  .testimonial {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    opacity: 0;
-    &--show {
-      opacity: 1;
+}
+
+.testimonial {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  &--show {
+    opacity: 1;
+  }
+  &__img {
+    display: block;
+    margin: auto;
+    width: 37%;
+    @media(min-width: $min-width-1) and (max-width: $min-width-2) {
+      width: 40%;
     }
-    &__img {
-      display: block;
-      margin: auto;
-      width: 37%;
-      @media(min-width: $min-width-1) and (max-width: $min-width-2) {
-        width: 40%;
-      }
-      @media(max-width: $min-width-1) {
-        width: 60%;
-      }
-    }
-    &__name {
-      display: block;
-      margin-top: 50px;
-      margin-bottom: 35px;
-      font-size: $font-size-h1 / 2;
-      font-family: Dosis, Arial, sans-serif;
-      color: $white;
-      line-height: 1.2;
-      font-weight: 700;
-      text-align: center;
-      font-style: normal;
-      letter-spacing: 2px;
-    }
-    &__text {
-      font-size: $font-size-base + .4;
-      font-family: Roboto, Arial, sans-serif;
-      line-height: 1.2;
-      text-align: center;
-      margin-top: 0;
-      margin-bottom: 0;
-      color: $white;
-      font-weight: normal;
+    @media(max-width: $min-width-1) {
+      width: 60%;
     }
   }
+  &__name {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 35px;
+    font-size: $font-size-h1 / 2;
+    font-family: Dosis, Arial, sans-serif;
+    color: $white;
+    line-height: 1.2;
+    font-weight: 700;
+    text-align: center;
+    font-style: normal;
+    letter-spacing: 2px;
+  }
+  &__text {
+    font-size: $font-size-base + .4;
+    font-family: Roboto, Arial, sans-serif;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $white;
+    font-weight: normal;
+  }
+}
