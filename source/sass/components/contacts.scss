@@ -27,13 +27,14 @@
     background-color: $grey-f5;
   }
   &--even {
+    padding-top: 55px;
     background-color: $grey-fa;
   }
   &__img {
     width: 33%;
     margin-bottom: 10px;
     &--wide {
-      width: 40%;
+      width: 36%;
       margin-bottom: 20px;
     }
   }

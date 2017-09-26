@@ -1344,12 +1344,13 @@ a {
   .contact--odd {
     background-color: #f5f5f5; }
   .contact--even {
+    padding-top: 55px;
     background-color: #fafafa; }
   .contact__img {
     width: 33%;
     margin-bottom: 10px; }
     .contact__img--wide {
-      width: 40%;
+      width: 36%;
       margin-bottom: 20px; }
   .contact__title, .contact__link {
     display: block;
