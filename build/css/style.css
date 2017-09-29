@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Dosis:400,500,700|Montserrat|Roboto+Slab|Roboto:400,500,700,900);
+@import url(https://fonts.googleapis.com/css?family=Dosis:400,500,700|Montserrat|Roboto+Slab:700|Roboto:400,500,700,900);
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -1152,25 +1152,25 @@ a {
     @media (min-width: 700px) and (max-width: 1170px) {
       .testimonials__list {
         min-height: 490px; } }
-    .testimonials__list__nav {
-      width: 62px;
-      display: flex;
-      justify-content: space-between;
-      margin-left: auto;
-      margin-right: auto;
-      z-index: 10;
-      cursor: pointer;
-      margin-top: 50px; }
-    .testimonials__list__nav-item {
-      box-sizing: border-box;
-      width: 14px;
-      height: 14px;
-      border-radius: 50%;
-      border: 2px solid #fff;
-      cursor: pointer;
-      z-index: 10; }
-      .testimonials__list__nav-item--active {
-        background-color: #fff; }
+  .testimonials__nav {
+    width: 62px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
+    cursor: pointer;
+    margin-top: 50px; }
+  .testimonials__nav-item {
+    box-sizing: border-box;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    cursor: pointer;
+    z-index: 10; }
+    .testimonials__nav-item--active {
+      background-color: #fff; }
 
 .testimonial {
   position: absolute;
@@ -1378,5 +1378,207 @@ a {
     margin-bottom: 0;
     letter-spacing: 1px;
     font-style: normal; }
+
+.page-footer {
+  padding-top: 280px;
+  padding-bottom: 250px;
+  background-image: url("../img/page-footer__bg.png"), url("../img/page-footer__bg--bottom.png");
+  background-position: top, bottom;
+  background-repeat: repeat-x;
+  background-size: 100%; }
+  @media (-webkit-min-device-pixel-ratio: 2) {
+    .page-footer {
+      background-image: url("../img/page-footer__bg@2x.png"), url("../img/page-footer__bg--bottom@2x.png"); } }
+  @media (max-width: 700px) {
+    .page-footer {
+      padding-top: 180px;
+      padding-bottom: 150px; } }
+  .page-footer__inner {
+    max-width: 1140px;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    margin: auto; }
+    @media (max-width: 1170px) {
+      .page-footer__inner {
+        padding-left: 5%;
+        padding-right: 5%; } }
+  .page-footer__form {
+    display: flex;
+    justify-content: space-between; }
+    @media (max-width: 700px) {
+      .page-footer__form {
+        flex-direction: column;
+        align-content: flex-start; } }
+  .page-footer__label {
+    font-size: 1.6rem;
+    font-family: Roboto, Arial, sans-serif;
+    color: #00a4d3;
+    line-height: 1.6;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0; }
+    .page-footer__label--tel {
+      display: inline-block;
+      margin-top: 30px; }
+      @media (max-width: 1170px) {
+        .page-footer__label--tel {
+          margin-top: 0; } }
+    .page-footer__label--instagram {
+      text-align: right; }
+      @media (max-width: 1170px) {
+        .page-footer__label--instagram {
+          text-align: left; } }
+  .page-footer__group {
+    width: 46%;
+    display: flex;
+    justify-content: space-between; }
+    @media (min-width: 700px) and (max-width: 1170px) {
+      .page-footer__group {
+        width: 60%; } }
+    @media (max-width: 700px) {
+      .page-footer__group {
+        width: 100%;
+        margin-top: 10px; } }
+  .page-footer__input {
+    box-sizing: border-box;
+    width: 71%;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 19px;
+    font-size: 1.2rem;
+    font-family: Roboto, Arial, sans-serif;
+    color: #333333;
+    line-height: 2.5;
+    font-weight: 400;
+    border: 1px solid #00a4d3; }
+  .page-footer__btn {
+    width: 27%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #00a4d3;
+    font-size: 1.4rem;
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    border: none; }
+  .page-footer__cont {
+    margin-top: 110px; }
+    @media (max-width: 1170px) {
+      .page-footer__cont {
+        margin-top: 50px; } }
+  .page-footer__wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    margin-top: 40px;
+    align-items: flex-start; }
+    @media (max-width: 1170px) {
+      .page-footer__wrap {
+        flex-wrap: wrap;
+        justify-content: flex-start; } }
+  @media (min-width: 700px) and (max-width: 1170px) {
+    .page-footer__contacts {
+      margin-right: 10%;
+      width: 30%; } }
+  @media (max-width: 700px) {
+    .page-footer__contacts {
+      width: 45%;
+      margin-right: 10%; } }
+  .page-footer__option {
+    margin-top: 0;
+    font-size: 1.4rem;
+    font-family: Roboto, Arial, sans-serif;
+    line-height: 1.8;
+    color: #333;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase; }
+    .page-footer__option:hover, .page-footer__option:active, .page-footer__option:visited, .page-footer__option:focus {
+      color: #333; }
+  @media (max-width: 1170px) {
+    .page-footer__quicklinks {
+      width: 45%; } }
+  .page-footer__quicklinks-list {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+  .page-footer__instagram {
+    width: 36%; }
+    @media (min-width: 700px) and (max-width: 1170px) {
+      .page-footer__instagram {
+        width: 80%;
+        margin-top: 20px; } }
+    @media (max-width: 700px) {
+      .page-footer__instagram {
+        width: 100%;
+        margin-top: 20px; } }
+  .page-footer__instagram-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 60px; }
+    @media (max-width: 1170px) {
+      .page-footer__instagram-list {
+        justify-content: flex-start;
+        margin-top: 20px; } }
+  .page-footer__instagram-item {
+    width: 98px;
+    height: 98px;
+    border-radius: 20px;
+    background-color: #00a4d3; }
+    @media (max-width: 1170px) {
+      .page-footer__instagram-item {
+        margin-right: 2%; } }
+  .page-footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    margin-top: 40px;
+    align-items: flex-start; }
+    @media (max-width: 1170px) {
+      .page-footer__bottom {
+        flex-direction: column;
+        align-items: center; } }
+  .page-footer__copyright {
+    font-size: 1.4rem;
+    font-family: Roboto Slab, Arial, sans-serif;
+    color: #00a4d3;
+    line-height: 2.3;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .page-footer__logo {
+    margin-top: -25px; }
+    @media (max-width: 1170px) {
+      .page-footer__logo {
+        margin-top: 20px; } }
+  .page-footer__social {
+    margin-top: 20px;
+    width: 27%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center; }
+    @media (min-width: 700px) and (max-width: 1170px) {
+      .page-footer__social {
+        width: 35%;
+        margin-top: 20px; } }
+    @media (max-width: 700px) {
+      .page-footer__social {
+        width: 60%;
+        margin-top: 20px; } }
+  .page-footer__social-link {
+    display: block;
+    vertical-align: middle;
+    font-size: 0; }
+    .page-footer__social-link svg {
+      fill: #00a4d3; }
 
 /*# sourceMappingURL=style.css.map */

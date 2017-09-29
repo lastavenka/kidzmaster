@@ -26,27 +26,27 @@
     @media(min-width: $min-width-1) and (max-width: $min-width-2) {
       min-height: 490px;
     }
-    &__nav {
-      width: 62px;
-      display: flex;
-      justify-content: space-between;
-      margin-left: auto;
-      margin-right: auto;
-      z-index: 10;
-      cursor: pointer;
-      margin-top: 50px;
-    }
-    &__nav-item {
-      box-sizing: border-box;
-      width: 14px;
-      height: 14px;
-      border-radius: 50%;
-      border: 2px solid $white;
-      cursor: pointer;
-      z-index: 10;
-      &--active {
-        background-color: $white;
-      }
+  }
+  &__nav {
+    width: 62px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
+    cursor: pointer;
+    margin-top: 50px;
+  }
+  &__nav-item {
+    box-sizing: border-box;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid $white;
+    cursor: pointer;
+    z-index: 10;
+    &--active {
+      background-color: $white;
     }
   }
 }

@@ -319,7 +319,7 @@
   <footer class="page-footer">
     <div class="page-footer__inner">
       <form action="POST" class="page-footer__form">
-        <label for="email" class="page-footer__label">Sign up for our newssletter</label>
+        <label for="email" class="page-footer__label">Sign up<br>for our newssletter</label>
         <div class="page-footer__group">
           <input type="email" class="page-footer__input" id="email" placeholder="Enter your email" required>
           <button class="page-footer__btn" type="submit">Submit now</button>
@@ -330,50 +330,68 @@
           <div class="page-footer__contacts">
             <div class="page-footer__address">
               <h3 class="page-footer__label">Address:</h3>
-              <address class="page-footer__option">73724 Route, 4ASouth Richmond Hill, NY 11419</address>
+              <address class="page-footer__option">73724 Route, 4A<br>South Richmond Hill, NY 11419</address>
             </div>
-            <span class="page-footer__label">Tel:</span><a href="tel:(603)-677-3400" class="page-footer__option">(603)-677-3400</a><br>
-            <span class="page-footer__label">Email:</span><a href="mailto:info@yourdomain.com" class="page-footer__option">info@yourdomain.com</a><br>
-            <span class="page-footer__label">Web:</span><a href="yourdomain.com" class="page-footer__option">yourdomain.com</a>
+            <span class="page-footer__label page-footer__label--tel">Tel:</span><a href="tel:(603)-677-3400" class="page-footer__option"> (603)-677-3400</a><br>
+            <span class="page-footer__label">Email:</span><a href="mailto:info@yourdomain.com" class="page-footer__option"> info@yourdomain.com</a><br>
+            <span class="page-footer__label">Web:</span><a href="yourdomain.com" class="page-footer__option"> yourdomain.com</a>
           </div>
           <div class="page-footer__quicklinks">
             <h3 class="page-footer__label">Quicklinks:</h3>
             <ul class="page-footer__quicklinks-list">
-              <li class="page-footer__quicklinks-item">Calendar</li>
-              <li class="page-footer__quicklinks-item">Maps &#38; Directions</li>
-              <li class="page-footer__quicklinks-item">Our news</li>
-              <li class="page-footer__quicklinks-item">University courses</li>
-              <li class="page-footer__quicklinks-item">Contact us</li>
+              <li class="page-footer__quicklinks-item"><a href="#" class="page-footer__option">Calendar</a></li>
+              <li class="page-footer__quicklinks-item"><a href="#" class="page-footer__option">Maps &#38; Directions</a></li>
+              <li class="page-footer__quicklinks-item"><a href="#" class="page-footer__option">Our news</a></li>
+              <li class="page-footer__quicklinks-item"><a href="#" class="page-footer__option">University courses</a></li>
+              <li class="page-footer__quicklinks-item"><a href="#" class="page-footer__option">Contact us</a></li>
             </ul>
           </div>
           <div class="page-footer__instagram">
-            <h3 class="page-footer__label">Instagram</h3>
+            <h3 class="page-footer__label page-footer__label--instagram">Instagram</h3>
             <ul class="page-footer__instagram-list">
-              <li class="page-footer__instagram-item"><img src="img/" alt="Instagram"></li>
-              <li class="page-footer__instagram-item"><img src="img/" alt="Instagram"></li>
-              <li class="page-footer__instagram-item"><img src="img/" alt="Instagram"></li>
-              <li class="page-footer__instagram-item"><img src="img/" alt="Instagram"></li>
+              <li class="page-footer__instagram-item">
+                <a href="#" class="page-footer__instagram-link"></a>
+              </li>
+              <li class="page-footer__instagram-item">
+                <a href="#" class="page-footer__instagram-link"></a>
+              </li>
+              <li class="page-footer__instagram-item">
+                <a href="#" class="page-footer__instagram-link"></a>
+              </li>
+              <li class="page-footer__instagram-item">
+                <a href="#" class="page-footer__instagram-link"></a>
+              </li>
             </ul>
           </div>
         </div>
-        <div class="page-footer__wrap">
+        <div class="page-footer__bottom">
           <span class="page-footer__copyright">Copyright © 2017 Kidz master. All Rights Reserved</span>
           <img src="img/page-footer__logo.png" srcset="img/page-footer__logo@2x.png 2x" alt="Kidz Master" class="page-footer__logo">
           <ul class="page-footer__social">
             <li class="page-footer__social-item"><a href="#" class="page-footer__social-link">Facebook
-                <svg></svg>
+                <svg width="25" height="35">
+                    <use xlink:href="#social__fb"></use>
+                </svg>
               </a></li>
             <li class="page-footer__social-item"><a href="#" class="page-footer__social-link">Twitter
-                <svg></svg>
+                <svg width="30" height="25">
+                    <use xlink:href="#social__twi"></use>
+                </svg>
               </a></li>
             <li class="page-footer__social-item"><a href="#" class="page-footer__social-link">Google+
-                <svg></svg>
+                <svg width="47" height="30">
+                    <use xlink:href="#social__g+"></use>
+                </svg>
               </a></li>
             <li class="page-footer__social-item"><a href="#" class="page-footer__social-link">LinkedIn
-                <svg></svg>
+                <svg width="25" height="28">
+                    <use xlink:href="#social__linkedin"></use>
+                </svg>
               </a></li>
             <li class="page-footer__social-item"><a href="#" class="page-footer__social-link">YouTube
-                <svg></svg>
+                <svg width="36" height="26">
+                    <use xlink:href="#social__youtube"></use>
+                </svg>
               </a></li>
           </ul>
         </div>

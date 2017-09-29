@@ -1,0 +1,223 @@
+.page-footer {
+  padding-top: 280px;
+  padding-bottom: 250px;
+  background-image: url("../img/page-footer__bg.png"), url("../img/page-footer__bg--bottom.png");
+  background-position: top, bottom;
+  background-repeat: repeat-x;
+  background-size: 100%;
+  @media (-webkit-min-device-pixel-ratio: 2) {
+    background-image: url("../img/page-footer__bg@2x.png"), url("../img/page-footer__bg--bottom@2x.png");
+  }
+  @media(max-width: $min-width-1) {
+    padding-top: 180px;
+    padding-bottom: 150px;
+  }
+  &__inner {
+    max-width: 1140px;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    margin: auto;
+    @media(max-width: $min-width-2) {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    @media(max-width: $min-width-1) {
+      flex-direction: column;
+      align-content: flex-start;
+    }
+  }
+  &__label {
+    font-size: $font-size-base + .2;
+    font-family: Roboto, Arial, sans-serif;
+    color: $teal;
+    line-height: 1.6;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0;
+    &--tel {
+      display: inline-block;
+      margin-top: 30px;
+      @media(max-width: $min-width-2) {
+        margin-top: 0;
+      }
+    }
+    &--instagram {
+      text-align: right;
+      @media(max-width: $min-width-2) {
+        text-align: left;
+      }
+    }
+  }
+  &__group {
+    width: 46%;
+    display: flex;
+    justify-content: space-between;
+    @media(min-width: $min-width-1) and (max-width: $min-width-2) {
+      width: 60%;
+    }
+    @media(max-width: $min-width-1) {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  &__input {
+    box-sizing: border-box;
+    width: 71%;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 19px;
+    font-size: $font-size-base - .2;
+    font-family: Roboto, Arial, sans-serif;
+    color: opacify($grey-33, .6);
+    line-height: 2.5;
+    font-weight: 400;
+    border: 1px solid $teal;
+  }
+  &__btn {
+    width: 27%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: $teal;
+    font-size: $font-size-base;
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    text-transform: uppercase;
+    text-align: center;
+    color: $white;
+    border: none;
+  }
+  &__cont {
+    margin-top: 110px;
+    @media(max-width: $min-width-2) {
+      margin-top: 50px;
+    }
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    margin-top: 40px;
+    align-items: flex-start;
+    @media(max-width: $min-width-2) {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+  }
+  &__contacts {
+    @media(min-width: $min-width-1) and (max-width: $min-width-2) {
+      margin-right: 10%;
+      width: 30%;
+    }
+    @media(max-width: $min-width-1) {
+      width: 45%;
+      margin-right: 10%;
+    }
+  }
+  &__option {
+    margin-top: 0;
+    font-size: $font-size-base;
+    font-family: Roboto, Arial, sans-serif;
+    line-height: 1.8;
+    color: $grey-33;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    &:hover,
+    &:active,
+    &:visited,
+    &:focus {
+      color: $grey-33;
+    }
+  }
+  &__quicklinks {
+    @media(max-width: $min-width-2) {
+      width: 45%;
+    }
+  }
+  &__quicklinks-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  &__instagram {
+    width: 36%;
+    @media(min-width: $min-width-1) and (max-width: $min-width-2) {
+      width: 80%;
+      margin-top: 20px;
+    }
+    @media(max-width: $min-width-1) {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+  &__instagram-list {
+    @include list-to-flex;
+    margin-top: 60px;
+    @media(max-width: $min-width-2) {
+      justify-content: flex-start;
+      margin-top: 20px;
+    }
+  }
+  &__instagram-item {
+    width: 98px;
+    height: 98px;
+    border-radius: 20px;
+    background-color: $teal;
+    @media(max-width: $min-width-2) {
+      margin-right: 2%;
+    }
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    margin-top: 40px;
+    align-items: flex-start;
+    @media(max-width: $min-width-2) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__copyright {
+    font-size: $font-size-base;
+    font-family: Roboto Slab, Arial, sans-serif;
+    color: $teal;
+    line-height: 2.3;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &__logo {
+    margin-top: -25px;
+    @media(max-width: $min-width-2) {
+      margin-top: 20px;
+    }
+  }
+  &__social {
+    margin-top: 20px;
+    width: 27%;
+    @include list-to-flex;
+    align-items: center;
+    @media(min-width: $min-width-1) and (max-width: $min-width-2) {
+      width: 35%;
+      margin-top: 20px;
+    }
+    @media(max-width: $min-width-1) {
+      width: 60%;
+      margin-top: 20px;
+    }
+  }
+  &__social-link {
+    display: block;
+    vertical-align: middle;
+    font-size: 0;
+    svg {
+      fill: $teal;
+    }
+  }
+}
