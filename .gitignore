@@ -2,7 +2,7 @@ node_modules
 npm-debug.log
 Thumbs.db
 .DS_Store
-prepros.cfg
 *.sublime*
 *.map
 .sass-cache
+.csscomb.json
