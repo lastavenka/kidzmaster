@@ -80,8 +80,8 @@
   }
   &__btn {
     width: 27%;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: $teal;
     font-size: $font-size-base;
     font-family: Roboto, Arial, sans-serif;
@@ -90,7 +90,13 @@
     text-transform: uppercase;
     text-align: center;
     color: $white;
-    border: none;
+    border: 2px solid $teal;
+    transition: color .2s ease-out, background-color .2s ease-out;
+    &:hover {
+      color: $teal;
+      background-color: $white;
+      border: 2px solid $teal;
+    }
   }
   &__cont {
     margin-top: 110px;
@@ -118,6 +124,10 @@
       width: 45%;
       margin-right: 10%;
     }
+    address:hover,
+    address:active {
+      color: $grey-33;
+    }
   }
   &__option {
     margin-top: 0;
@@ -128,11 +138,10 @@
     font-weight: 400;
     font-style: normal;
     text-transform: uppercase;
+    transition: color .2s ease-out;
     &:hover,
-    &:active,
-    &:visited,
-    &:focus {
-      color: $grey-33;
+    &:active {
+      color: $teal;
     }
   }
   &__quicklinks {
@@ -172,6 +181,10 @@
     @media(max-width: $min-width-2) {
       margin-right: 2%;
     }
+  }
+  &__instagram-link {
+    display: block;
+    height: 100%;
   }
   &__bottom {
     display: flex;

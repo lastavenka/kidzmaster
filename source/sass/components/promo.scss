@@ -68,8 +68,8 @@
     display: block;
     float: right;
     width: 30%;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     background-color: $teal;
     border-radius: 10px;
     font-size: $font-size-base;
@@ -79,6 +79,13 @@
     text-align: center;
     margin-top: 35px;
     color: $white;
+    border: 2px solid $teal;
+    transition: color .2s ease-out, background-color .2s ease-out;
+    &:hover {
+      color: $teal;
+      background-color: $white;
+      border: 2px solid $teal;
+    }
     @media(max-width: $min-width-2) {
       width: 40%;
       float: none;

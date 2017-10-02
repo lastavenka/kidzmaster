@@ -50,14 +50,18 @@
     margin-bottom: 10px;
     letter-spacing: 1px;
     font-style: normal;
-    &:active,
-    &:visited,
-    &:hover,
-    &:focus {
-      color: $teal;
-    }
     svg {
       fill: $teal;
+    }
+  }
+  &__link {
+    transition: color .2s ease-out;
+    &:active,
+    &:hover {
+      color: transparentize($teal, .2);
+      svg {
+        fill: transparentize($teal, .2);
+      }
     }
   }
   &__text {

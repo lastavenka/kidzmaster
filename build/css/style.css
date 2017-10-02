@@ -431,7 +431,10 @@ a {
     color: #fff;
     font-size: 1.4rem;
     font-family: Roboto, Arial, sans-serif;
-    opacity: .9; }
+    opacity: .9;
+    transition: color .2s ease-out; }
+    .page-header__phone:hover {
+      color: rgba(255, 255, 255, 0.8); }
     @media (min-width: 700px) and (max-width: 1170px) {
       .page-header__phone {
         margin-right: 10%; } }
@@ -445,7 +448,10 @@ a {
     color: #fff;
     font-size: 1.4rem;
     font-family: Roboto, Arial, sans-serif;
-    opacity: .9; }
+    opacity: .9;
+    transition: color .2s ease-out; }
+    .page-header__mail:hover {
+      color: rgba(255, 255, 255, 0.8); }
     @media (max-width: 700px) {
       .page-header__mail {
         font-size: 0; } }
@@ -462,7 +468,10 @@ a {
     .page-header__search svg {
       fill: #fff; }
   .page-header__register {
-    opacity: .9; }
+    opacity: .9;
+    transition: color .2s ease-out; }
+    .page-header__register:hover {
+      color: rgba(255, 255, 255, 0.8); }
     @media (min-width: 700px) and (max-width: 1170px) {
       .page-header__register {
         margin-right: 10%; } }
@@ -474,7 +483,10 @@ a {
       margin-right: 10px;
       margin-bottom: -2px; }
   .page-header__login {
-    opacity: .9; }
+    opacity: .9;
+    transition: color .2s ease-out; }
+    .page-header__login:hover {
+      color: rgba(255, 255, 255, 0.8); }
     @media (max-width: 700px) {
       .page-header__login {
         font-size: 0; } }
@@ -508,7 +520,11 @@ a {
   font-size: 1.4rem;
   font-family: Roboto, Arial, sans-serif;
   text-transform: uppercase;
-  opacity: .9; }
+  opacity: .9;
+  font-weight: 400;
+  transition: color .2s ease-out; }
+  .main-nav__link:hover {
+    color: rgba(255, 255, 255, 0.8); }
   @media (max-width: 700px) {
     .main-nav__link {
       display: block;
@@ -516,6 +532,8 @@ a {
       padding-bottom: 10px; } }
   .main-nav__link--active {
     font-weight: 900; }
+    .main-nav__link--active:hover {
+      color: #fff; }
 
 .hamburger {
   display: none;
@@ -617,8 +635,8 @@ a {
     display: block;
     float: right;
     width: 30%;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     background-color: #00a4d3;
     border-radius: 10px;
     font-size: 1.4rem;
@@ -627,7 +645,13 @@ a {
     text-transform: uppercase;
     text-align: center;
     margin-top: 35px;
-    color: #fff; }
+    color: #fff;
+    border: 2px solid #00a4d3;
+    transition: color .2s ease-out, background-color .2s ease-out; }
+    .promo__btn:hover {
+      color: #00a4d3;
+      background-color: #fff;
+      border: 2px solid #00a4d3; }
     @media (max-width: 1170px) {
       .promo__btn {
         width: 40%;
@@ -756,8 +780,8 @@ a {
     display: block;
     width: 36%;
     margin-top: 45px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     background-color: #fff;
     border-radius: 10px;
     font-size: 1.6rem;
@@ -766,9 +790,13 @@ a {
     line-height: 1.2;
     font-weight: 500;
     text-align: center;
-    text-transform: uppercase; }
-    .about__btn:hover, .about__btn:active, .about__btn:focus {
-      color: #00a4d3; }
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    transition: color .2s ease-out, background-color .2s ease-out; }
+    .about__btn:hover {
+      color: #fff;
+      background-color: #00a4d3;
+      border: 2px solid #fff; }
     @media (max-width: 700px) {
       .about__btn {
         margin-left: auto;
@@ -839,8 +867,8 @@ a {
   margin-right: auto;
   margin-left: auto;
   width: 19%;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background-color: #00a4d3;
   border-radius: 10px;
   font-size: 1.4rem;
@@ -848,7 +876,13 @@ a {
   line-height: 1.2;
   text-transform: uppercase;
   text-align: center;
-  color: #fff; }
+  color: #fff;
+  border: 2px solid #00a4d3;
+  transition: color .2s ease-out, background-color .2s ease-out; }
+  .courses__btn:hover {
+    color: #00a4d3;
+    background-color: #fff;
+    border: 2px solid #00a4d3; }
   @media (max-width: 1170px) {
     .courses__btn {
       width: 40%;
@@ -914,9 +948,10 @@ a {
     line-height: 1.2;
     font-weight: 500;
     margin-top: 30px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    transition: color .2s ease-out; }
     .course__btn:active, .course__btn:focus, .course__btn:hover {
-      color: #00a4d3; }
+      color: rgba(0, 164, 211, 0.8); }
 
 .features {
   background-image: url("../img/features__bg.png");
@@ -1264,8 +1299,9 @@ a {
   line-height: 1.2;
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 2px; }
-  .news__nav-link:active, .news__nav-link:focus, .news__nav-link:hover, .news__nav-link:visited, .news__nav-link--active {
+  letter-spacing: 2px;
+  transition: color .2s ease-out, border-color .2s ease-out; }
+  .news__nav-link:active, .news__nav-link:focus, .news__nav-link:hover, .news__nav-link--active {
     color: #00a4d3;
     border-bottom-color: #00a4d3; }
 .news__list {
@@ -1275,13 +1311,18 @@ a {
   margin: 0;
   padding: 0;
   margin-top: 40px; }
+  .news__list--sorted {
+    justify-content: flex-start; }
   @media (max-width: 700px) {
     .news__list {
       flex-direction: column;
       align-items: center; } }
 
 .news-item {
-  width: 31%; }
+  width: 31%;
+  margin-right: 2%; }
+  .news-item:last-child {
+    margin-right: 0; }
   @media (max-width: 700px) {
     .news-item {
       width: 60%;
@@ -1291,7 +1332,8 @@ a {
   .news-item__img {
     display: block;
     width: 100%;
-    border-radius: 30px; }
+    border-radius: 30px;
+    transition: box-shadow 0.2s ease-out; }
   .news-item__time {
     color: #000;
     display: block;
@@ -1363,10 +1405,14 @@ a {
     margin-bottom: 10px;
     letter-spacing: 1px;
     font-style: normal; }
-    .contact__title:active, .contact__title:visited, .contact__title:hover, .contact__title:focus, .contact__link:active, .contact__link:visited, .contact__link:hover, .contact__link:focus {
-      color: #00a4d3; }
     .contact__title svg, .contact__link svg {
       fill: #00a4d3; }
+  .contact__link {
+    transition: color .2s ease-out; }
+    .contact__link:active, .contact__link:hover {
+      color: rgba(0, 164, 211, 0.8); }
+      .contact__link:active svg, .contact__link:hover svg {
+        fill: rgba(0, 164, 211, 0.8); }
   .contact__text {
     display: block;
     font-size: 1.4rem;
@@ -1454,8 +1500,8 @@ a {
     border: 1px solid #00a4d3; }
   .page-footer__btn {
     width: 27%;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: #00a4d3;
     font-size: 1.4rem;
     font-family: Roboto, Arial, sans-serif;
@@ -1464,7 +1510,12 @@ a {
     text-transform: uppercase;
     text-align: center;
     color: #fff;
-    border: none; }
+    border: 2px solid #00a4d3;
+    transition: color .2s ease-out, background-color .2s ease-out; }
+    .page-footer__btn:hover {
+      color: #00a4d3;
+      background-color: #fff;
+      border: 2px solid #00a4d3; }
   .page-footer__cont {
     margin-top: 110px; }
     @media (max-width: 1170px) {
@@ -1488,6 +1539,9 @@ a {
     .page-footer__contacts {
       width: 45%;
       margin-right: 10%; } }
+  .page-footer__contacts address:hover,
+  .page-footer__contacts address:active {
+    color: #333; }
   .page-footer__option {
     margin-top: 0;
     font-size: 1.4rem;
@@ -1496,9 +1550,10 @@ a {
     color: #333;
     font-weight: 400;
     font-style: normal;
-    text-transform: uppercase; }
-    .page-footer__option:hover, .page-footer__option:active, .page-footer__option:visited, .page-footer__option:focus {
-      color: #333; }
+    text-transform: uppercase;
+    transition: color .2s ease-out; }
+    .page-footer__option:hover, .page-footer__option:active {
+      color: #00a4d3; }
   @media (max-width: 1170px) {
     .page-footer__quicklinks {
       width: 45%; } }
@@ -1535,6 +1590,9 @@ a {
     @media (max-width: 1170px) {
       .page-footer__instagram-item {
         margin-right: 2%; } }
+  .page-footer__instagram-link {
+    display: block;
+    height: 100%; }
   .page-footer__bottom {
     display: flex;
     justify-content: space-between;

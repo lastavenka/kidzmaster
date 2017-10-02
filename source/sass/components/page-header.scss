@@ -67,6 +67,10 @@
     font-size: $font-size-base;
     font-family: $font-family-base;
     opacity: .9;
+    transition: color .2s ease-out;
+    &:hover {
+      color: transparentize($white, .2);
+    }
     @media(min-width: $min-width-1) and (max-width: $max-width-1) {
       margin-right: 10%;
     }
@@ -83,6 +87,10 @@
     font-size: $font-size-base;
     font-family: $font-family-base;
     opacity: .9;
+    transition: color .2s ease-out;
+    &:hover {
+      color: transparentize($white, .2);
+    }
     @media(max-width: $min-width-1) {
       font-size: 0;
     }
@@ -104,6 +112,10 @@
   }
   &__register {
     opacity: .9;
+    transition: color .2s ease-out;
+    &:hover {
+      color: transparentize($white, .2);
+    }
     @media(min-width: $min-width-1) and (max-width: $max-width-1) {
       margin-right: 10%;
     }
@@ -118,6 +130,10 @@
   }
   &__login {
     opacity: .9;
+    transition: color .2s ease-out;
+    &:hover {
+      color: transparentize($white, .2);
+    }
     @media(max-width: $min-width-1) {
       font-size: 0;
     }
@@ -154,6 +170,11 @@
     font-family: $font-family-base;
     text-transform: uppercase;
     opacity: .9;
+    font-weight: 400;
+    transition: color .2s ease-out;
+    &:hover {
+      color: transparentize($white, .2);
+    }
     @media(max-width: $min-width-1) {
       display: block;
       padding-top: 10px;
@@ -161,6 +182,9 @@
     }
     &--active {
       font-weight: 900;
+      &:hover {
+        color: $white;
+      }
     }
   }
 }

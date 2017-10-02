@@ -50,8 +50,8 @@
     margin-right: auto;
     margin-left: auto;
     width: 19%;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     background-color: $teal;
     border-radius: 10px;
     font-size: $font-size-base;
@@ -60,6 +60,13 @@
     text-transform: uppercase;
     text-align: center;
     color: $white;
+    border: 2px solid $teal;
+    transition: color .2s ease-out, background-color .2s ease-out;
+    &:hover {
+      color: $teal;
+      background-color: $white;
+      border: 2px solid $teal;
+    }
     @media(max-width: $min-width-2) {
       width: 40%;
       margin-left: auto;
@@ -136,10 +143,11 @@
     font-weight: 500;
     margin-top: 30px;
     text-transform: uppercase;
+    transition: color .2s ease-out;
     &:active,
     &:focus,
     &:hover {
-      color: $teal;
+      color: transparentize($teal, .2);
     }
   }
 }
