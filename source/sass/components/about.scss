@@ -85,6 +85,11 @@
     text-transform: uppercase;
     border: 2px solid $white;
     transition: color .2s ease-out, background-color .2s ease-out;
+    &:focus,
+    &:visited,
+    &:active {
+      color: $teal;
+    }
     &:hover {
       color: $white;
       background-color: $teal;

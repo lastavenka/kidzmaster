@@ -367,7 +367,8 @@ body {
 
 a {
   color: #fff;
-  text-decoration: none; }
+  text-decoration: none;
+  outline-color: lightgrey; }
   a:hover, a:focus {
     color: #fff;
     text-decoration: none; }
@@ -707,7 +708,8 @@ a {
     height: 14px;
     border-radius: 50%;
     border: 2px solid #00a4d3;
-    cursor: pointer; }
+    cursor: pointer;
+    outline-color: lightgrey; }
     .promo-slider__nav-item--active {
       background-color: #00a4d3; }
 
@@ -793,6 +795,8 @@ a {
     text-transform: uppercase;
     border: 2px solid #fff;
     transition: color .2s ease-out, background-color .2s ease-out; }
+    .about__btn:focus, .about__btn:visited, .about__btn:active {
+      color: #00a4d3; }
     .about__btn:hover {
       color: #fff;
       background-color: #00a4d3;
@@ -1203,7 +1207,8 @@ a {
     border-radius: 50%;
     border: 2px solid #fff;
     cursor: pointer;
-    z-index: 10; }
+    z-index: 10;
+    outline-color: lightgrey; }
     .testimonials__nav-item--active {
       background-color: #fff; }
 
@@ -1409,6 +1414,8 @@ a {
       fill: #00a4d3; }
   .contact__link {
     transition: color .2s ease-out; }
+    .contact__link:focus, .contact__link:visited {
+      color: #00a4d3; }
     .contact__link:active, .contact__link:hover {
       color: rgba(0, 164, 211, 0.8); }
       .contact__link:active svg, .contact__link:hover svg {
@@ -1552,8 +1559,8 @@ a {
     font-style: normal;
     text-transform: uppercase;
     transition: color .2s ease-out; }
-    .page-footer__option:hover, .page-footer__option:active {
-      color: #00a4d3; }
+    .page-footer__option:focus, .page-footer__option:visited, .page-footer__option:active {
+      color: #333; }
   @media (max-width: 1170px) {
     .page-footer__quicklinks {
       width: 45%; } }

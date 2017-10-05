@@ -139,9 +139,10 @@
     font-style: normal;
     text-transform: uppercase;
     transition: color .2s ease-out;
-    &:hover,
+    &:focus,
+    &:visited,
     &:active {
-      color: $teal;
+      color: $grey-33;
     }
   }
   &__quicklinks {
