@@ -7,6 +7,6 @@
   <li>BEM</li>
   <li>Flexbox layout</li>
   <li>SVG</li>
-<ul>
+</ul>
 
 <p>Please see the result <a href="https://lastavenka.github.io/kidzmaster/build/index.min.html" target="_blank">here</a>.</p>
